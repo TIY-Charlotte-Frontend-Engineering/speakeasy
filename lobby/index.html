@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Speakeasy: lobby</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css">
+    <link rel="stylesheet" href="../style/style.css">
+
+    <script id="stage-template" type="x-tmpl-mustache">
+        <h3>{{ username }}</h3>
+        <p>Input: <pre>{{ input }}</pre></p>
+        <p>Output: <pre>{{ output }}</pre></p>
+    </script>
+</head>
+
+<body>
+    <header>
+        <h2>Speak Easy</h2>
+        <h3>Welcome, host. Where shall we begin?</h3>
+        <input type="text" id="output" placeholder="Think big">
+        <button id="submit">Submit</button>
+        <button id="end">End game</button>
+    </header>
+    <main></main>
+</body>
+
+</html>
